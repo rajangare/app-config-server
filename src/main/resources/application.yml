@@ -1,0 +1,28 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: app-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rajangare/app-config-repo
+          clone-on-start: true
+          basedir: ./target/gitrepo
+      discovery:
+        enabled: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:8084/eureka/
+
+management:
+  context-path: /admin
+
+#http://localhost:8888/client-config/production
+#http://localhost:8888/client-config/development
