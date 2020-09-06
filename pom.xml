@@ -11,7 +11,7 @@
 	<groupId>com.assignment</groupId>
 	<artifactId>app-config-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>app-config-server</name>
+	<name>App Config Server</name>
 	<description>App Config Server</description>
 
 	<properties>
